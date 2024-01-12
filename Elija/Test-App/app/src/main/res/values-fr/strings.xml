@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2013 Aubort Jean-Baptiste (Rorist)
+    Licensed under GNU's GPL 3, see README
+-->
+<resources>
+
+    <string name="app_name">MyHackerspace</string>
+    <string name="empty"></string>
+    <string name="ok">OK</string>
+
+    <string name="status_open">Ouvert</string>
+    <string name="status_closed">Fermé</string>
+    <string name="status_unknown">Inconnu</string>
+    
+    <string name="ui_logo">Logo du hackerspace</string>
+    <string name="ui_name">FIXME</string>
+    <string name="ui_url">https://fixme.ch</string>
+    <string name="ui_image_status">Image du status du hackerspace</string>
+
+    <string name="choose_hs">Choisir un hackerspace</string>
+    <string name="choose_time">Choisir un interval en minutes: </string>
+    <string name="choose_time_default">30</string>
+    <string name="choose_transparency">Transparence des widgets</string>
+    <string name="choose_text">Texte du statut sous les widgets</string>
+
+    <string name="btn_refresh">Rafraichir</string>
+    <string name="btn_prefs">Préférences</string>
+
+    <string name="msg_loading">Chargement…</string>
+    <string name="error_title">Erreur: </string>
+    <string name="error_network_title">Réseau</string>
+    <string name="error_network_msg">Réseau déconnecté</string>
+    <string name="error_generic">\n\nVérifiez que votre API corresponde à la version que vous déclarez!\n\nVoir https://spaceapi.io/</string>
+
+    <string name="prefs_api_title">Serveur de la SpaceAPI</string>
+    <string name="prefs_api_summary">URL vers l\'annuaire de la SpaceAPI (fichier directory.json)\nExemple:\nhttps://directory.spaceapi.io/</string>
+    <string name="prefs_api_url_title">API du hackerspace sélectionné</string>
+    <string name="prefs_api_url_summary">Outrepasser l\'url du hackerspace sélectionné (sera perdu lors de la sélection d\'un autre hackerspace dans la liste)</string>
+    <string name="prefs_interval_title">Interval de vérification</string>
+    <string name="prefs_interval_summary">Interval en minutes entre les vérifications du widget</string>
+    <string name="prefs_transparent_title">Transparence des widgets</string>
+    <string name="prefs_transparent_summary">L\'image de fond des widgets sera transparente au lieu de grise</string>
+    <string name="prefs_text_title">Texte sous les widgets</string>
+    <string name="prefs_text_summary">Ajout d\'un texte du statut sour les widgets</string>
+
+    <string name="api_status">Status</string>
+    <string name="api_lastchange">Dernier changement: </string>
+    <string name="api_duration">Durée: </string>
+    <string name="api_duration_hours"> heure(s)</string>
+    <string name="api_location">Localisation</string>
+    <string name="api_contact">Contact</string>
+    <string name="api_webcams">Webcam</string>
+    <string name="api_sensors">Capteurs</string>
+
+</resources>
