@@ -15,10 +15,10 @@
     "issue_report_channels": ["email"],
     "state": {
       "icon": {
-        "open": "https://github.com/Elija-K/SpaceAPI/blob/main/Odw_Open.png?raw=true",
-        "closed": "https://github.com/Elija-K/SpaceAPI/blob/main/Odw_Closed.png?raw=true"
+        "open": "https://elija-k.github.io/SpaceAPI-ODW/Elija/Test-App/odw_open.png?raw=true",
+        "closed": "https://elija-k.github.io/SpaceAPI-ODW/Elija/Test-App/odw_closed.png?raw=true"
       },
-      "open": true
+      "open": null
     },
     "projects": [
       "https://wiki.odenwilusenz.ch/doku.php?id=start"
