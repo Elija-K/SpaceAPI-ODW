@@ -1,85 +1,124 @@
-<div align="center">
-  <!-- Centered README header hack -->
-  <img width="280" src="graphics/myhackerspace.png">
-  <br><br>
-</div>
+# space.api
+The [Space API](https://spaceapi.io/) endpoint for the Amman Valley MakerSpace, switched on and off with a big sign that is also a switch.
 
-# My Hackerspace
+- You can see a description of how to setup the [MyHackerspace app](#the-app-myhackerspace).
+- You can fork this repository to [set up a Raspberry Pi based HackerSpace status for your own space](#setup-for-your-hackerspace).
 
-[![Build status](https://circleci.com/gh/spaceapi-community/my-hackerspace.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/spaceapi-community/my-hackerspace)
+![current status][status]
 
-This is an Android app with the following features:
+[status]: https://spaceapistatusimage.hosted.quelltext.eu/status?url=https%3A%2F%2Fraw.githubusercontent.com%2FAmmanVMS%2Fspace.api%2Fmain%2Fapi.json
 
-- Show the opening status of hacker- and makerspaces using the [SpaceAPI](https://spaceapi.io/)
-- Show information about the space (contact, location, sensors, ...)
-- Status widget, multiple widgets supported
+## Usage
 
-The app was originally developed in 2012 by [@rorist] from [FIXME Lausanne]. In
-2021, the app was transferred to the [SpaceAPI community repositories] and is
-now mainly being developed by members of [Coredump].
-You can join our [Matrix](https://matrix.org/) chat at `#spaceapi:matrix.coredump.ch`.
+If the button is on or off, the scripts will upload the current status.
+Since the scripts run each minute once, see crontab and
+GitHub refreshes the page every 5 minutes, it can take up to 
+**6 minutes** until an update arrives on the website.
 
-[@rorist]: https://github.com/rorist
-[FIXME Lausanne]: https://fixme.ch/
-[SpaceAPI community repositories]: https://github.com/spaceapi-community/
-[Coredump]: https://www.coredump.ch/
+### The App MyHackerspace
 
-<a href="https://f-droid.org/packages/io.spaceapi.community.myhackerspace/"><img width="200" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid"></a>
-<a href="https://play.google.com/store/apps/details?id=io.spaceapi.community.myhackerspace"><img width="200" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play"></a>
+![image](https://user-images.githubusercontent.com/564768/180648397-77bd6525-fc57-4aa6-b241-db8f5fe593f9.png)
 
-## How it works
+To install the app [MyHackerspace][mhs]:
 
-The app will get the list of hackspaces from [https://directory.spaceapi.io](https://directory.spaceapi.io).
-You can then choose the space by its name from a list.
-When the space is chosen, the associated data is retrieved from the space's
-SpaceAPI endpoint (which is registered in the SpaceAPI directory).
-If you would like to add your space to the directory, have a look at
-[the SpaceAPI website](https://spaceapi.io/provide-an-endpoint/).
+1. Head over to [f-droid.org](https://f-droid.org/).
+2. Download the F-Droid app and install it.
+3. Search in it for [MyHackerspace][mhs]: "hacker"
+4. Install the app. ([Direct Download](https://f-droid.org/repo/ch.fixme.status_21.apk) - not recommended)
+5. In Preferences (three dots at the top right), choose `Amman Valley MakerSpace` or add the current Hackerspace API as `https://raw.githubusercontent.com/AmmanVMS/space.api/main/api.json`.
+6. If you want the widget:  
+    ![image](https://user-images.githubusercontent.com/564768/180646507-8ecbb045-6ed7-4cce-a769-90427883f696.png)
+    1. Long-click on the background of your Android Phone
+    2. Choose `Widgets`
+    3. Choose `MyHackerspace`
+    4. Choose the `Amman Valley MakerSpace`
+    5. Choose to display the text and the transparent background.
+    6. You will see a button but soon it will have refreshed.
 
-### The Widget
+[mhs]: https://f-droid.org/en/packages/ch.fixme.status/
 
-The image for the widget is specified in the SpaceAPI endpoint JSON.
-Have a look at the [schema documentation](https://spaceapi.io/docs/) to make your
-widget more pretty!
+### Status Image
 
-1. `open.icon` - if present, the widget chooses the specific open/closed images
-2. `logo` - the widget chooses the logo of the hackspace to display
+The status image for the space can be found here:
 
-## How to Compile
+[![status image][status]][status]
 
-First, get the sources.
+Please copy the whole URL if you like to embed it:
 
-    git clone --recursive https://github.com/spaceapi-community/my-hackerspace.git
-    cd my-hackerspace
+    https://spaceapistatusimage.hosted.quelltext.eu/status?url=https%3A%2F%2Fraw.githubusercontent.com%2FAmmanVMS%2Fspace.api%2Fmain%2Fapi.json
 
-### Android Studio
+### Status Badge
 
-With Android Studio, simply open the project directory and you should be set.
+If you would like to have a small badge displaying the status of the space, you can use this one:
 
-### Command Line
+[![][badge]][badge]
 
-You can build the project using Gradle.
+Please copy the whole URL:
 
-The following examples use the gradle wrapper script which will automatically
-download gradle to your local directory. If you want to use your own
-system-wide installation instead, simply replace `./gradlew` commands with
-`gradle`.
+    https://spaceapistatusimage.hosted.quelltext.eu/status?url=https%3A%2F%2Fraw.githubusercontent.com%2FAmmanVMS%2Fspace.api%2Fmain%2Fapi.json&open=https%3A%2F%2Fimg.shields.io%2Fbadge%2FMakerSpace-open-lightgreen&closed=https%3A%2F%2Fimg.shields.io%2Fbadge%2FMakerSpace-closed-red
 
-First, copy `local.properties.example` to `local.properties` and adjust the
-path to your Android SDK installation.
+[badge]: https://spaceapistatusimage.hosted.quelltext.eu/status?url=https%3A%2F%2Fraw.githubusercontent.com%2FAmmanVMS%2Fspace.api%2Fmain%2Fapi.json&open=https%3A%2F%2Fimg.shields.io%2Fbadge%2FMakerSpace-open-lightgreen&closed=https%3A%2F%2Fimg.shields.io%2Fbadge%2FMakerSpace-closed-red
 
-To build a debug APK:
+The badge and the image were both created with the [SpaceAPIStatusImage generator](https://ammanvms.github.io/SpaceAPIStatusImage/).
 
-    ./gradlew assembleDebug
+## Setup For Your HackerSpace
 
-You will find your APK file in the ` app/build/outputs/apk/` directory.
+You can set up your own Raspberry Pi to report the Hackerspace setup.
+This should walk you through how to do it.
 
-You can also build and directly install the file to your connected smartphone:
+1. [Fork this repository.](https://github.com/AmmanVMS/space.api/fork)
+2. Edit [api.json](api.json) to represent your own space.  
+    You can replace the `workshop-closed.jpg` and `workshop-oepn.jpg` images or just leave them out for the start.
+    There is loads to customize. have a look at the [documentation](https://spaceapi.io/docs/).
+3. Follow the [Server Installation](#server-installation) described below.
+4. Decide if you would like to setup GitHub Pages to serve the endpoint: Fork → Settings → GitHub Pages → choose branch → save.
+    The endpoint should be avaliable under https://**your_fork**.github.io/space.api/app.json
+    That might be faster than the raw representation which caches for a long time.
+5. [Check and include](https://spaceapi.io/provide-an-endpoint/) the raw-git/GitHub Pages URL to the `api.json` file for your repository's api.json file. ([Example](https://github.com/SpaceApi/directory/pull/205))
 
-    ./gradlew assembleDebug installDebug
+## Server Installation
 
-To see other tasks that gradle offers, run
+The Raspberry Pi will update the status JSON automatically and push the current status
+to GitHub. GitHub serves as a reliable server for the data.
 
-    ./gradlew tasks
+1. Install git.
+2. Create SSH-Key. 
+    ```
+    ssh-keygen
+    ```
+3. Add the `~/.ssh/id_rsa.pub` as deploy key to the repo or add it to the GitHub account.
+4. Clone the repo
+    ```
+    git clone git@github.com:AmmanVMS/space.api
+    cd space.api
+    git config --local user.email "pi@raspi"
+    git config --local user.name "pi"
+    ```
+5. Add a minutely check with `crontab -e`:
+    ```
+    * * * * * /home/pi/space.api/check_status.job
+    ```
 
+Done. Now, the Raspberry Pi checks the status every minute and
+uploads it to GitHub.
+You can check if it works by reading the created log file.
 
+## Hardware setup
+
+See [Using Switch with Raspberry Pi – Python](https://electrosome.com/using-switch-raspberry-pi/).
+You can also adjust the scripts.
+
+![image](https://user-images.githubusercontent.com/564768/179254745-3d816c42-57bd-415f-a971-402d4f052f74.png)
+
+You can edit the script to change whether a pressed switch means open or closed.
+
+In our case, we also have an LED attached to the swicth so you know if it connects.
+Pins: `black(5V) free red(GND) free free yellow(GPIO)`
+
+## Checking the Status
+
+To check the status, run the
+
+```
+./status.py
+```
