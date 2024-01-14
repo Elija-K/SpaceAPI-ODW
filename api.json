@@ -18,7 +18,7 @@
         "open": "https://elija-k.github.io/SpaceAPI-ODW/Elija/Test-App/odw_open.png?raw=true",
         "closed": "https://elija-k.github.io/SpaceAPI-ODW/Elija/Test-App/odw_closed.png?raw=true"
       },
-      "open": 1
+      "open": true
     },
     "projects": [
       "https://wiki.odenwilusenz.ch/doku.php?id=start"
