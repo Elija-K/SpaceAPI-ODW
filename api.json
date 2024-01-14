@@ -51,19 +51,6 @@
         "value": 0
       }
     ],
-    "network_traffic": [
-      {
-        "properties": [
-          {
-            "bits_per_second": [
-              {
-                "value": 0
-              }
-            ]
-          }
-        ]
-      }
-    ]
   },
   "projects": [
     "https://wiki.odenwilusenz.ch/doku.php?id=start"
