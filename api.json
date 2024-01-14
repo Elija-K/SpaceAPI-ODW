@@ -1,30 +1,27 @@
 {
-    "api": "0.13",
-    "api_compatibility": ["14"],
-    "space": "Odenwilusenz",
-    "logo": "https://odenwilusenz.ch/odw-global/wGlobal/layout/images/Logo_breit.png",
-    "url": "https://odenwilusenz.ch",
-    "location": {
-      "address": "Hardmorgenweg 21 , 8222 Beringen, Switzerland",
+  "api": "0.13",
+  "api_compatibility": ["14"],
+  "space": "Odenwilusenz",
+  "logo": "https://odenwilusenz.ch/odw-global/wGlobal/layout/images/Logo_breit.png",
+  "url": "https://odenwilusenz.ch",
+  "location": {
+      "address": "Hardmorgenweg 21, 8222 Beringen, Switzerland",
       "lon": 8.580,
       "lat": 47.695
-    },
-    "contact": {
+  },
+  "contact": {
       "email": "bluetonyum@gmail.com"
-    },
-    "issue_report_channels": ["email"],
-    "state": {
+  },
+  "issue_report_channels": ["email"],
+  "state": {
       "icon": {
-        "open": "https://elija-k.github.io/SpaceAPI-ODW/odw_open.png",
-        "closed": "https://elija-k.github.io/SpaceAPI-ODW/odw_closed.png"
+          "open": "https://elija-k.github.io/SpaceAPI-ODW/odw_open.png",
+          "closed": "https://elija-k.github.io/SpaceAPI-ODW/odw_closed.png"
       },
       "open": true
-    },
-    {
-    "projects": [
+  },
+  "projects": [
       "https://wiki.odenwilusenz.ch/doku.php?id=start"
-      ]
-    "Mitglieder": {
-      "42"
-    },
-  }
+  ],
+  "Mitglieder": 42
+}
