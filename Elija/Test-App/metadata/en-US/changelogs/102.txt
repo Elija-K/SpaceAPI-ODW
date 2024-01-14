@@ -1,3 +1,0 @@
-- [change] Update dependencies
-- [change] Rename package to `io.spaceapi.community.myhackerspace`
-- [info] Add F-Droid metadata
