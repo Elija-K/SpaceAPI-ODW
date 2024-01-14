@@ -37,7 +37,7 @@
       },
       {
         "type": "wifi",
-        "value": 0
+        "value": null
       }
     ],
     "door_locked": [
