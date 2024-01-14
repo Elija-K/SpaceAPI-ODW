@@ -22,7 +22,8 @@
       "open": "https://elija-k.github.io/SpaceAPI-ODW/odw_open.png",
       "closed": "https://elija-k.github.io/SpaceAPI-ODW/odw_closed.png"
     },
-    "open": false
+    "open": false,
+    "message": "Ihr seid Herzlich Willkommen beim Odenwilusenz, Jeden Mittwoch offen ab 19:00"
   },
   "sensors": {
     "total_member_count": [
@@ -32,10 +33,6 @@
     ],
     "network_connections": [
       {
-        "type": "cable",
-        "value": 0
-      },
-      {
         "type": "wifi",
         "value": 26
       }
@@ -44,6 +41,27 @@
       {
         "location": "Vordert\u00fcre",
         "value": true
+      }
+    ],
+    "people_now_present": [
+      {
+        "location": "Hauptgebäude",
+        "name": "Vordertür-sensor",
+        "description": "Kann ungenau sein!",
+        "value": 0
+      }
+    ],
+    "network_traffic": [
+      {
+        "properties": [
+          {
+            "bits_per_second": [
+              {
+                "value": 0
+              }
+            ]
+          }
+        ]
       }
     ]
   },
