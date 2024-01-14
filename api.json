@@ -20,16 +20,23 @@
       },
       "open": true
     },
+  "sensors": {
+    "total_member_count": [
+      {
+        "value": 42
+      }
+    ],
     "network_connections": [
       {
         "type": "cable",
-        "value": 0
+        "value": 1
       },
       {
         "type": "wifi",
-        "value": 0
+        "value": 1
       }
-    ],
+    ]
+  },
     "projects": [
       "https://wiki.odenwilusenz.ch/doku.php?id=start"
     ]
