@@ -29,11 +29,11 @@
     "network_connections": [
       {
         "type": "cable",
-        "value": 1
+        "value": 0
       },
       {
         "type": "wifi",
-        "value": 1
+        "value": 0
       }
     ]
   },
