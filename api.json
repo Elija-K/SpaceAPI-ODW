@@ -15,8 +15,8 @@
     "issue_report_channels": ["email"],
     "state": {
       "icon": {
-        "open": "https://elija-k.github.io/SpaceAPI-ODW/Elija/Test-App/odw_open.png?raw=true",
-        "closed": "https://elija-k.github.io/SpaceAPI-ODW/Elija/Test-App/odw_closed.png?raw=true"
+        "open": "https://elija-k.github.io/SpaceAPI-ODW/odw_open.png",
+        "closed": "https://elija-k.github.io/SpaceAPI-ODW/odw_closed.png"
       },
       "open": true
     },
