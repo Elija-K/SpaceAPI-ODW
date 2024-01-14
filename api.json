@@ -20,7 +20,11 @@
       },
       "open": true
     },
+    {
     "projects": [
       "https://wiki.odenwilusenz.ch/doku.php?id=start"
-    ]
+      ]
+    "Mitglieder": {
+      "42"
+    },
   }
