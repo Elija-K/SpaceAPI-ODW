@@ -35,6 +35,12 @@
         "type": "wifi",
         "value": 0
       }
+    ],
+    "door_locked": [
+      {
+        "location": "Vordertüre",
+        "value": true
+      }
     ]
   },
     "projects": [
