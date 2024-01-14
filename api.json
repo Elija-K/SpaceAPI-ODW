@@ -45,8 +45,8 @@
     ],
     "people_now_present": [
       {
-        "location": "Hauptgebäude",
-        "name": "Vordertür-sensor",
+        "location": "Hauptgeb\u00e4ude",
+        "name": "Vordert\u00fcr-sensor",
         "description": "Kann ungenau sein!",
         "value": 0
       }
