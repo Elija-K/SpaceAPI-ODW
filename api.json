@@ -20,6 +20,16 @@
       },
       "open": true
     },
+    "network_connections": [
+      {
+        "type": "cable",
+        "value": 0
+      },
+      {
+        "type": "wifi",
+        "value": 0
+      },
+    ],
     "projects": [
       "https://wiki.odenwilusenz.ch/doku.php?id=start"
     ]
