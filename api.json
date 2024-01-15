@@ -71,22 +71,6 @@
         "name": "Vordert\u00fcr-sensor",
         "value": 0
       }
-    ],
-    "temperature": [
-      {
-        "unit": "°C",
-        "location": "VR-Raum",
-        "name": "VR-sensor",
-        "value": 0
-      }
-    ],
-    "humidity": [
-      {
-        "unit": "%",
-        "location": "VR-Raum",
-        "name": "VR-sensor",
-        "value": 0
-      }
     ]
   },
   "feed": [
