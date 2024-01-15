@@ -71,6 +71,14 @@
         "name": "Vordert\u00fcr-sensor",
         "value": 0
       }
+    ],
+    "lights": [
+      {
+        "light1": false,
+        "light2": false,
+        "light3": false,
+        "light4": true
+      }
     ]
   },
   "feed": [
