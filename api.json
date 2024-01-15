@@ -9,10 +9,15 @@
   "location": {
     "address": "Hardmorgenweg 21, 8222 Beringen, Switzerland",
     "lon": 8.58,
-    "lat": 47.695
+    "lat": 47.695,
+    "timezone": "Europe/Zurich"
   },
   "contact": {
-    "email": "bluetonyum@gmail.com"
+    "email": "mail@odenwilusenz.ch",
+    "issue_mail": "bluetonyum@gmail.com",
+    "phone": "+41 79 767 50 15",
+    "facebook": "https://www.facebook.com/groups/32995461009/",
+    "twitter": "@odenwilusenz"
   },
   "issue_report_channels": [
     "email"
@@ -48,6 +53,22 @@
         "location": "Hauptgeb\u00e4ude",
         "name": "Vordert\u00fcr-sensor",
         "description": "Kann ungenau sein!",
+        "value": 0
+      }
+    ],
+    "temperature": [
+      {
+        "unit": "°C",
+        "location": "Hauptgeb\u00e4ude",
+        "name": "Vordert\u00fcr-sensor",
+        "value": 0
+      }
+    ],
+    "humidity": [
+      {
+        "unit": "%",
+        "location": "Hauptgeb\u00e4ude",
+        "name": "Vordert\u00fcr-sensor",
         "value": 0
       }
     ]
