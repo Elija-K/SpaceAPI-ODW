@@ -71,9 +71,38 @@
         "name": "Vordert\u00fcr-sensor",
         "value": 0
       }
+    ],
+    "temperature": [
+      {
+        "unit": "°C",
+        "location": "VR-Raum",
+        "name": "VR-sensor",
+        "value": 0
+      }
+    ],
+    "humidity": [
+      {
+        "unit": "%",
+        "location": "VR-Raum",
+        "name": "VR-sensor",
+        "value": 0
+      }
     ]
   },
-  "projects": [
-    "https://wiki.odenwilusenz.ch/doku.php?id=start"
+  "feed": [
+    {
+      "wiki": [
+        {
+          "type": "Doku-Wiki",
+          "url": "https://wiki.odenwilusenz.ch"
+        }
+      ],
+      "calender": [
+        {
+          "type": "Web",
+          "url": "https://odenwilusenz.ch/odw/veranstaltungen/"
+        }
+      ]
+    }
   ]
 }

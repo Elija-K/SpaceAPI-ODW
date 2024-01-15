@@ -1,7 +1,6 @@
 ## Todo 
 ### Elija \/
 Script für Pi schreiben --> People counter
-API Changing
 
 
 ### Jan \/
@@ -13,3 +12,4 @@ Falls geht noch ein Skript für einen Humiodity und Temperatur Sensor Values sin
 
 ### Erledigt
 Script für Pi schreiben --> Network Scanner (Wifi) (Skript bei Elija --> Private Daten drin)
+API Changing
