@@ -39,7 +39,7 @@
     "network_connections": [
       {
         "type": "wifi",
-        "value": 27
+        "value": null
       }
     ],
     "door_locked": [
@@ -58,7 +58,7 @@
     ],
     "temperature": [
       {
-        "unit": "°C",
+        "unit": "\u00b0C",
         "location": "Hauptgeb\u00e4ude",
         "name": "Vordert\u00fcr-sensor",
         "value": 0
